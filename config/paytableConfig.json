@@ -1,0 +1,7 @@
+{
+	"paytable":[
+		{"symbolId": "A", "winAmount": [0,0,1]},
+		{"symbolId": "B", "winAmount": [0,0,2]},
+		{"symbolId": "C", "winAmount": [0,0,3]}
+	]
+}
