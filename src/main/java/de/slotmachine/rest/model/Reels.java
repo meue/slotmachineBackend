@@ -15,9 +15,10 @@ public class Reels {
     
     public List<ReelStripe> getReelStripes() {
     	List<ReelStripe> stripes = new ArrayList<ReelStripe>();
+    	int stripeLength = Config.reelsConfig.reelStripeLength;
         for(int i=0; i<this.reelList.size(); i++) {
         	Reel reel = this.reelList.get(i);
-        	ReelStripe stripe = reel.getRandomReelStripe(3);
+        	ReelStripe stripe = reel.getRandomReelStripe(stripeLength);
         	stripes.add(stripe);
         }
         return stripes;
