@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import de.slotmachine.rest.model.Paytable;
 import de.slotmachine.rest.model.ReelStripe;
 import de.slotmachine.rest.model.Reels;
-import de.slotmachine.rest.model.SpinResult;
  
 @Repository
 public class SlotmachineDAO 
@@ -15,9 +14,9 @@ public class SlotmachineDAO
     private static Reels reels = new Reels();
 	private static Paytable paytable = new Paytable();
      
-    public SpinResult getSpinResult() 
+    public SpinResultDAO getSpinResult() 
     {
-    	SpinResult spinResult = new SpinResult();
+    	SpinResultDAO spinResult = new SpinResultDAO();
     	List<ReelStripe> stripes = reels.getReelStripes();
     	spinResult.setResult(stripes, paytable);
         return spinResult;

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import de.slotmachine.rest.dao.SlotmachineDAO;
-import de.slotmachine.rest.model.SpinResult;
+import de.slotmachine.rest.dao.SpinResultDAO;
  
 @RestController
 public class SlotmachineController 
@@ -20,7 +20,7 @@ public class SlotmachineController
     }
      
     @GetMapping(path = "/spin", produces = "application/json")
-    public SpinResult getSpinResult() {
+    public SpinResultDAO getSpinResult() {
         return slotmachineDao.getSpinResult();
     }
 }

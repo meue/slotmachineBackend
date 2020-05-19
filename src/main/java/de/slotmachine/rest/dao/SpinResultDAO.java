@@ -1,9 +1,13 @@
-package de.slotmachine.rest.model;
+package de.slotmachine.rest.dao;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpinResult {
+import de.slotmachine.rest.model.Payline;
+import de.slotmachine.rest.model.Paytable;
+import de.slotmachine.rest.model.ReelStripe;
+
+public class SpinResultDAO {
 	
 	// Will be printed in RestCall
 	public List<ReelStripe> reelStripes = new ArrayList<ReelStripe>();
