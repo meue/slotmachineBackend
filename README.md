@@ -1,5 +1,6 @@
 # Hi!
-
+This is a minimal pseudo backend for a slotmachine and is the result of a application-test as a java-developer. (Yes, it was a success)
+It includes Java, Spring, JUnit, Maven and Json.
 
 ## build it
 `mvn clean install`
